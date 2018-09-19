@@ -1,7 +1,15 @@
 <h1>Userのインデックスだよ</h1>
 
 <% @users.each do |user| %>
-  <tr>
-    <td><%= user.name %></td>
-  </tr>
+  <ul>
+    <li><%= user.email %></li>
+    <li><%= user.encrypted_password  %></li>
+    <li><%= user.name_family_name %></li>
+    <li><%= user.name_name %></li>
+    <li><%= user.furigana_family_name %></li>
+    <li><%= user.furigana_name %></li>
+    <li><%= user.postal_code %></li>
+    <li><%= user.address %></li>
+    <li><%= user.phone_number %></li>
+  </ul>
 <% end %>

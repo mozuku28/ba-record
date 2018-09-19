@@ -4,6 +4,8 @@ class Admins::OmniauthCallbacksController < Devise::OmniauthCallbacksController
   # You should configure your model like this:
   # devise :omniauthable, omniauth_providers: [:twitter]
 
+  layout 'admins'
+
   # You should also create an action method in this controller like this:
   # def twitter
   # end

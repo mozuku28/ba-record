@@ -2,6 +2,9 @@
 
 class Admins::UnlocksController < Devise::UnlocksController
   # GET /resource/unlock/new
+
+  layout 'admins'
+
   # def new
   #   super
   # end
