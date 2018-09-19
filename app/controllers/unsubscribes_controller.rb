@@ -1,0 +1,2 @@
+class UnsubscribesController < ApplicationController
+end
