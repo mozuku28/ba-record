@@ -1,8 +1,17 @@
+<%= form_tag admins_path, :method => 'get' do %>
+    <p>
+      <%= text_field_tag :search, params[:search] %>
+      <%= submit_tag "検索", :name => nil %>
+    </p>
+<% end %>
+
 <h1>アドミンのインデックスだよ</h1>
 
-<% @admins.each do |admin| %>
+<% @admins_search.each do |admin| %>
   <ul>
     <li><%= admin.id %></li>
     <li><%= admin.email %></li>
   </ul>
 <% end %>
+
+<%= paginate @admins_search %>

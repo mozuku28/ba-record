@@ -1,60 +1,17 @@
-User.seed do |s|
-  s.id = 1
-  s.email = "aaa@aaa"
-  s.encrypted_password = "aaaaaa"
-  s.name_family_name = "aaaaaa"
-  s.name_name = "aaaaaa"
-  s.furigana_family_name = "aaaaaa"
-  s.furigana_name = "aaaaaa"
-  s.postal_code = "111-1111"
-  s.address = "aaaaaa"
-  s.phone_number = "111-1111-1111"
-end
-User.seed do |s|
-  s.id = 2
-  s.email = "bbb@bbb"
-  s.encrypted_password = "bbbbbb"
-  s.name_family_name = "bbbbbb"
-  s.name_name = "bbbbbb"
-  s.furigana_family_name = "bbbbbb"
-  s.furigana_name = "bbbbbb"
-  s.postal_code = "222-2222"
-  s.address = "bbbbbb"
-  s.phone_number = "222-2222-2222"
-end
-User.seed do |s|
-  s.id = 3
-  s.email = "ccc@ccc"
-  s.encrypted_password = "cccccc"
-  s.name_family_name = "cccccc"
-  s.name_name = "cccccc"
-  s.furigana_family_name = "cccccc"
-  s.furigana_name = "cccccc"
-  s.postal_code = "333-3333"
-  s.address = "cccccc"
-  s.phone_number = "333-3333-3333"
-end
-User.seed do |s|
-  s.id = 4
-  s.email = "444@444"
-  s.encrypted_password = "dddddd"
-  s.name_family_name = "dddddd"
-  s.name_name = "dddddd"
-  s.furigana_family_name = "dddddd"
-  s.furigana_name = "dddddd"
-  s.postal_code = "444-4444"
-  s.address = "dddddd"
-  s.phone_number = "444-4444-4444"
-end
-User.seed do |s|
-  s.id = 5
-  s.email = "eee@eee"
-  s.encrypted_password = "eeeeee"
-  s.name_family_name = "eeeeee"
-  s.name_name = "eeeeee"
-  s.furigana_family_name = "eeeeee"
-  s.furigana_name = "eeeeee"
-  s.postal_code = "555-5555"
-  s.address = "eeeeee"
-  s.phone_number = "555-5555-5555"
-end
+a = "aaa@aaa"
+b = 0
+100.times {
+    c = b.to_s
+    b += 1
+  User.seed do |s|
+    s.email = a + c
+    s.encrypted_password = "aaaaaa"
+    s.name_family_name = "aaaaaa"
+    s.name_name = "aaaaaa"
+    s.furigana_family_name = "aaaaaa"
+    s.furigana_name = "aaaaaa"
+    s.postal_code = "111-1111"
+    s.address = "aaaaaa"
+    s.phone_number = "111-1111-1111"
+  end
+}
