@@ -1,0 +1,10 @@
+<h1>List of artist</h1>
+
+<% @artists.each do |artist| %>
+    <ul>
+        <li>
+            <%= artist.name %>
+            <%= link_to "Edit", edit_artist_path(artist.id), class: "btn-sm btn-success edit_artist_#{artist.id}" %>
+        </li>
+    </ul>
+<% end %>

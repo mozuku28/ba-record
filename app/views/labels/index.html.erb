@@ -1,0 +1,10 @@
+<h1>List of label</h1>
+
+<% @labels.each do |label| %>
+    <ul>
+        <li>
+            <%= label.name %>
+            <%= link_to "Edit", edit_label_path(label.id), class: "btn-sm btn-success edit_label_#{label.id}" %>
+        </li>
+    </ul>
+<% end %>

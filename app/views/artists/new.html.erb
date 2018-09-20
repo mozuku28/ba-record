@@ -1,0 +1,7 @@
+<h1>artist registration</h1>
+
+<%= form_for(@artist) do |t| %>
+    <h3>アーティスト名</h3>
+    <%= t.text_field :name, placeholder: "アーティスト名" %>
+    <%= t.submit '投稿' %>
+<% end %>

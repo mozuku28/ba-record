@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   registrations: 'users/registrations'
   }
 
-  root to: 'products#index'
+  root 'products#index'
 
   get 'admins/top' => 'admins#top', as: :admins_top
   get 'admins/' => 'admins#index', as: :admins
@@ -35,9 +35,8 @@ Rails.application.routes.draw do
   resources :unsubscribes
 
   resources :artists
+  resources :labels
   resources :discs
   resources :tunes
-
-
 
 end
