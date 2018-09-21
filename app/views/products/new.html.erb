@@ -1,0 +1,9 @@
+<h1>商品登録ページ</h1>
+
+<%= form_for(@product) do |f| %>
+<%= f.text_field :title %>
+<%= f.select :label_id, Label.all.map {|o| [o.name, o.id]} %>
+<%= f.text_field :price %>
+
+
+<% end %>
